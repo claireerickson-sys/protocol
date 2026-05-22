@@ -130,7 +130,7 @@ export default function IntakePage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col px-6 py-10">
+    <main className="min-h-screen flex flex-col px-6 py-10 pb-10" style={{ paddingBottom: "max(2.5rem, env(safe-area-inset-bottom))" }}>
       {/* Progress */}
       <div className="max-w-md w-full mx-auto mb-10">
         <div className="flex items-center justify-between mb-2">
@@ -169,7 +169,7 @@ export default function IntakePage() {
               onKeyDown={(e) => e.key === "Enter" && handleTextNext()}
               placeholder="Your name"
               autoFocus
-              className="w-full border-b-2 border-stone-200 focus:border-stone-900 bg-transparent py-3 text-xl text-stone-900 placeholder:text-stone-300 outline-none transition-colors"
+              className="w-full border-b-2 border-stone-200 focus:border-stone-900 bg-transparent py-3 text-base text-stone-900 placeholder:text-stone-300 outline-none transition-colors"
             />
             <button
               onClick={handleTextNext}
@@ -185,7 +185,7 @@ export default function IntakePage() {
               <button
                 key={opt.value}
                 onClick={() => handleOptionSelect(opt.value)}
-                className="w-full text-left px-5 py-4 rounded-xl border border-stone-200 hover:border-stone-900 hover:bg-stone-50 transition-all group"
+                className="w-full text-left px-5 py-5 rounded-xl border border-stone-200 hover:border-stone-900 active:bg-stone-50 hover:bg-stone-50 transition-all group"
               >
                 <div className="font-medium text-stone-900 group-hover:text-stone-900">
                   {opt.label}

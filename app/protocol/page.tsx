@@ -52,7 +52,7 @@ export default function ProtocolPage() {
   ];
 
   return (
-    <main className="min-h-screen px-6 py-14">
+    <main className="min-h-screen px-6 py-14 pb-28">
       <div className="max-w-2xl mx-auto space-y-10">
         {/* Header */}
         <div className="space-y-2">

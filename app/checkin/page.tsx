@@ -89,7 +89,7 @@ export default function CheckinPage() {
   };
 
   return (
-    <main className="min-h-screen px-6 py-12">
+    <main className="min-h-screen px-6 py-12 pb-28">
       <div className="max-w-md mx-auto space-y-10">
 
         {/* Header */}
